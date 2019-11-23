@@ -6,6 +6,8 @@ LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="yellow"
 
 RUN pip install --upgrade pip
+RUN apt-get update
+RUN apt-get install gcc
 RUN pip install pytest
 RUN python --version ; pip --version ; pytest --version
 
