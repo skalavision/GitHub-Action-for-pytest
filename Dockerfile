@@ -1,4 +1,4 @@
-FROM python:3.7-sim
+FROM python:3.7-slim
 
 LABEL "com.github.actions.name"="GitHub Action for pytest"
 LABEL "com.github.actions.description"="Run pytest commands"
